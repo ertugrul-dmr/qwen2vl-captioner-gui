@@ -21,7 +21,7 @@ This repo provides a simple GUI application for using the [Qwen2-VL-7B-Captioner
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/image-captioning-gradio.git
+   git clone https://github.com/ertugrul-dmr/qwen2vl-captioner-gui.git
    cd image-captioning-gradio
    ```
 
