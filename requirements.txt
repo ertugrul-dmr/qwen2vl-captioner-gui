@@ -1,3 +1,4 @@
 gradio
 git+https://github.com/huggingface/transformers
 safetensors
+accelerate
