@@ -70,5 +70,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [Gradio](https://gradio.app/)
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
-- [Pillow](https://python-pillow.org/)
 - [Qwen2-VL](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct)
