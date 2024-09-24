@@ -22,7 +22,9 @@ This repo provides a simple GUI application for using the [Qwen2-VL-7B-Captioner
 
    ```bash
    git clone https://github.com/ertugrul-dmr/qwen2vl-captioner-gui.git
-   cd image-captioning-gradio
+   ```
+   ```bash
+   cd qwen2vl-captioner-gui
    ```
 
 2. Install the required packages:
