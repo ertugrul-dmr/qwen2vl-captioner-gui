@@ -21,8 +21,10 @@ This repo provides a simple GUI application for using the [Qwen2-VL-7B-Captioner
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/image-captioning-gradio.git
-   cd image-captioning-gradio
+   git clone https://github.com/ertugrul-dmr/qwen2vl-captioner-gui.git
+   ```
+   ```bash
+   cd qwen2vl-captioner-gui
    ```
 
 2. Install the required packages:
@@ -68,5 +70,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [Gradio](https://gradio.app/)
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
-- [Pillow](https://python-pillow.org/)
 - [Qwen2-VL](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct)

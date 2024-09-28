@@ -1,4 +1,4 @@
-torch
 gradio
-git+https://github.com/huggingface/diffusers.git
+git+https://github.com/huggingface/transformers
 safetensors
+accelerate
