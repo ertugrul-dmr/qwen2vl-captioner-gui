@@ -5,6 +5,7 @@ import torch
 import warnings
 import sys
 from io import StringIO
+import gc
 
 # Suppress warnings
 warnings.filterwarnings("ignore")
@@ -53,6 +54,10 @@ def resize_image(image, longest_size):
         new_height = longest_size
         new_width = int(width * (longest_size / height))
     return image.resize((new_width, new_height), Image.LANCZOS)
+
+def clean_memory():
+    gc.collect()
+    torch.cuda.empty_cache()
 
 def generate_caption(image, longest_size, system_prompt, status_box):
     global model, processor
@@ -105,6 +110,12 @@ def generate_caption(image, longest_size, system_prompt, status_box):
         print("Caption generated successfully")
         if isinstance(status_box, gr.components.Textbox):
             status_box.update(value="Caption generated successfully")
+        
+        # Delete variables that will be recreated for next generation
+        del image, conversation, text_prompt, inputs, output_ids, generated_ids
+        
+        # Clean memory after generation
+        clean_memory()
         
         return output_text, "Caption generated successfully"
     except Exception as e:
